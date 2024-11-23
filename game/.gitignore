@@ -1,0 +1,9 @@
+
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+
+# Bad Visual Studio, go sit in a corner
+.vs/
+
