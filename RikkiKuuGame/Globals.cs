@@ -24,6 +24,9 @@ this is roughly the same usage / intention as `inline` keyword in C++
 
 */
 
+// resolve ambiguity with System.Environment, which is less frequently intended
+global using Environment = Godot.Environment;
+
 // debug
 global using System.Diagnostics;
 global using System.Diagnostics.CodeAnalysis;
@@ -32,7 +35,7 @@ global using System.Diagnostics.CodeAnalysis;
 global using System.Threading;
 global using System.Threading.Tasks;
 
-// resolve ambiguity with Godot.Thread
+// resolve ambiguity with Godot.Thread, which is seldom intended
 global using Thread = System.Threading.Thread;
 
 // generic programming & collections
