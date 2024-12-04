@@ -27,6 +27,6 @@ static partial class Utility
 	
 	
 	// surprisingly non-trivial Null-RID value
-	public static readonly Rid NullRID = new(null);
+	public static readonly Rid NullRID = new(null!);
 	
 }

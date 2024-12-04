@@ -50,7 +50,7 @@ static partial class Utility
 	
 	public static void InPlaceShuffle<T> (List<T> list)
 	{
-		for (int n = list?.Count ?? 0; n --> 1;) {
+		for (int n = list.Count; n --> 1;) {
 			int i = GD.RandRange( 0, n );
 			if (i < n) (list[i], list[n]) = (list[n], list[i]);
 		}

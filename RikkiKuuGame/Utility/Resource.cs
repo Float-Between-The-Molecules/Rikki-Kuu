@@ -8,8 +8,9 @@ static partial class Utility
 {
 	
 	// asynchronous resource load with progress fraction callback & error message callback
-	public static async Task<Resource> AsyncLoad (string target, Action<float> on_progress = null, Action<string> on_error = null)
+	public static async Task<Resource?> AsyncLoad (string target, Action<float>? on_progress = null, Action<string>? on_error = null)
 	{
+		
 		// try to initiate the resource load operation
 		var req_status = ResourceLoader.LoadThreadedRequest( target );
 		
@@ -20,7 +21,7 @@ static partial class Utility
 		}
 		
 		// assume all is going well and we will get a result
-		Resource result = null;
+		Resource? result = null;
 		
 		// progress is sent back as a variant in an unspecialized array
 		GC.Array progress_array = new();
