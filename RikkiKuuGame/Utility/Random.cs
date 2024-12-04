@@ -56,5 +56,8 @@ static partial class Utility
 		}
 	}
 	
+	
+	public static string GenerateGuid ()
+	=> Guid.NewGuid().ToString("N");
+	
 }
-
