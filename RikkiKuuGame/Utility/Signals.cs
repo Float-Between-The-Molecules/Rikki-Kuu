@@ -14,6 +14,9 @@ static partial class Utility
 	=> await target.ToSignal( target, signal );
 	
 	
+	public static async Task Wait (float duration)
+	=> await Scene.CreateTimer(duration).OnSignal(SceneTreeTimer.SignalName.Timeout);
+	
 	////////////////////////////////////////////////////////////////
 	
 	
