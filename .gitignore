@@ -1,9 +1,13 @@
 
-# Godot 4+ specific ignores
-.godot/
-/android/
+# ignore Godot 4+ editor folder and specifically all contents recursively
+.godot/**
 
+# but consider the contents of folders along the way in case we want to track something in particular
+!.godot/**/
 
-# Bad Visual Studio, go sit in a corner
+# include the current working export build as a ready-to-link reference library
+# DISABLED: these binaries should be obtained by official means of acquiring the game itself
+# !.godot/mono/temp/bin/ExportRelease/RikkiKuuGame.[dp][ld][lb]
+
+# ignore visual studio folder
 .vs/
-
