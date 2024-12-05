@@ -12,16 +12,14 @@ public static partial class Utility
 	// static initializer runs at first usage of this class, which should be some bootstrapper in principle
 	static Utility ()
 	{
+		// GD.Print( "RikkiKuu.Utility Static Initializer" );
 		
-		// best place to put a randomize call, this will seed godot's random functions immediately before Utility.Random functions are called
+		// best place to put a randomize call
 		GD.Randomize();
 		
 		// locate the scene tree at this time
 		Scene = FindSceneTree();
-		
-		// ensure scene tree is found or there will be problems
-		Assert(()=> Scene != null );
-		
+		Assert( Scene is not null );
 	}
 	
 }
