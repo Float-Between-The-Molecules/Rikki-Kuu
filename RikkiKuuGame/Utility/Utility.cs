@@ -8,7 +8,6 @@ namespace RikkiKuu;
 public static partial class Utility
 {
 	
-	
 	// static initializer runs at first usage of this class, which should be some bootstrapper in principle
 	static Utility ()
 	{

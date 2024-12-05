@@ -14,12 +14,15 @@ global using Godot;
 
 // standard system namespaces
 global using System;
-global using System.Runtime.InteropServices;
+global using System.Reflection;
 global using System.Runtime.CompilerServices;
+global using System.Runtime.InteropServices;
+global using System.Runtime.Loader;
 
 // debug
 global using System.Diagnostics;
 global using System.Diagnostics.CodeAnalysis;
+
 
 // concurrency
 global using System.Threading;
@@ -30,6 +33,7 @@ global using System.Collections.Generic;
 global using System.Collections.ObjectModel;
 global using System.Linq;
 global using System.Linq.Expressions;
+global using System.Text.RegularExpressions;
 
 
 //////// Aliases & Ambiguity Resolution ////////
